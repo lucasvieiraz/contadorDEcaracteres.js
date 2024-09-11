@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de Caracteres</title>
+    <style>
+        #contador { margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Contador de Caracteres</h1>
+    <input type="text" id="texto" oninput="contarCaracteres()">
+    <span id="contador">0 caracteres</span>
+
+    <script>
+        function contarCaracteres() {
+            const texto = document.getElementById('texto').value;
+            const contador = document.getElementById('contador');
+            let totalCaracteres = 0;
+
+            console.log('Texto atual:', texto); // Logando o valor atual do texto
+
+            for(let i = 0; i < texto.length; i++) {
+                totalCaracteres++;
+                console.log('Contando caracteres:', totalCaracteres); // Logando a contagem de caracteres a cada iteração
+            }
+
+            console.log('Total de caracteres:', totalCaracteres); // Logando o total de caracteres contados
+
+            contador.textContent = totalCaracteres + ' caracteres';
+            console.log('Texto do contador atualizado:', contador.textContent); // Logando o valor final do contador
+        }
+    </script>
+</body>
+</html>
