@@ -10,7 +10,9 @@ Exibir a contagem de caracteres em tempo real.
 ## Tecnologias Utilizadas
 
 HTML5: Estrutura da página.
+
 CSS3: Estilização simples.
+
 JavaScript: Lógica para contar e exibir o número de caracteres, utilizando um laço de repetição.
 
 ## Deploy
